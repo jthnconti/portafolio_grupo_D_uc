@@ -1,1 +1,5 @@
-
+title: Shaw Talebi
+logo: /assets/img/headshot_cicle.png
+#description: text below image
+show_download: true
+theme: jekyll-theme-minimal
