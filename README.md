@@ -1,3 +1,4 @@
+[Compañero1](https://www.youtube.com/channel/UCa9gErQ9AE5jT2DZLjXBIdA) [Compañero2](https://www.youtube.com/channel/UCa9gErQ9AE5jT2DZLjXBIdA)
 # Programador de Sistemas
 Habilidades técnicas: SQL, VB .net, C#, Javascript, Jquery
 ## Educación
