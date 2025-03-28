@@ -14,3 +14,19 @@ Programación e instalación de sistema informático de punto de ventas.
 Encargado del Área de Sistemas, reparación y mantenimiento de los equipos informáticos, cableado estructurado para nuevas conexiones de red entre otros
 ### Constructora e Inversiones Soto S.A.C.
 Encargado del Área de Sistemas, reparación y mantenimiento de los equipos informáticos, cableado estructurado para nuevas conexiones de red entre otros
+
+## Charlas y conferencias
+- C# Curso Completo para ser programador
+
+- Máster en SQL Server: Desde Cero a Nivel Profesional 2021
+
+- Taller Seguridad en Tecnologías de la Información
+
+- Taller Motivacional de Masa a Equipo
+
+- Orientación y Fortalecimiento para la Venta Efectiva
+
+- I Encuentro Regional Tecnológico SOLTECH
+  
+- Ms Windows AntiSpyware 
+
