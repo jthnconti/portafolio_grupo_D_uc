@@ -1,4 +1,4 @@
-[IPINCE ANTUNEZ](https://daniel-ipince.github.io/portafolio/) | [Compañero2](https://www.youtube.com/channel/UCa9gErQ9AE5jT2DZLjXBIdA)
+[IPINCE ANTUNEZ](https://daniel-ipince.github.io/portafolio/) | [ALVAREZ COLOMA](https://jthnconti.github.io/portafoliojthn/)
 # Programador de Sistemas
 Habilidades técnicas: SQL, VB .net, C#, Javascript, Jquery
 ## Educación
