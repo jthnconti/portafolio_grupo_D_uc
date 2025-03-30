@@ -1,4 +1,4 @@
-[IPINCE ANTUNEZ](https://daniel-ipince.github.io/portafolio/) | [ALVAREZ COLOMA](https://jthnconti.github.io/portafoliojthn/) | [WASHINGTON OLARTE](https://jthnconti.github.io/portafoliojthn/)
+[IPINCE ANTUNEZ](https://daniel-ipince.github.io/portafolio/) | [ALVAREZ COLOMA](https://jthnconti.github.io/portafoliojthn/) | [WASHINGTON OLARTE](https://jthnconti.github.io/portafoliojthn/) | [ANGEL NINA](https://angel20-a11.github.io/angel20-a11/)
 # Programador de Sistemas
 Habilidades técnicas: SQL, VB .net, C#, Javascript, Jquery
 ## Educación
