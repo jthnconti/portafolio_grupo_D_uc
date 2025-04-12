@@ -1,4 +1,4 @@
-
+layout: default
 # LICENCIADO EN MATEMÁTICA, FÍSICA E INFORMÁTICA
 Comprometido en alcanzar metas y dispuesto a enfrentar nuevos desafíos para la continua mejora de la institución.
 ## Formación Académica
