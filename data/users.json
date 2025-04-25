@@ -1,1 +1,23 @@
 
+[
+  {
+    "usuario": "carlosv",
+    "clave": "clave123"
+  },
+  {
+    "usuario": "jonathan",
+    "clave": "jon@web.com"
+  },
+  {
+    "usuario": "ipince",
+    "clave": "123456"
+  },
+  {
+    "usuario": "integrante4",
+    "clave": "miClave2024"
+  },
+  {
+    "usuario": "integrante5",
+    "clave": "contraseña!"
+  }
+]
