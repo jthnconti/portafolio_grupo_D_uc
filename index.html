@@ -84,17 +84,45 @@
 <body>
   <div class="login-container">
     <h2>Iniciar Sesión</h2>
-    <form action="/login" method="post">
+    <form id="loginForm">
       <div class="form-group">
-        <label for="email">Usuario</label>
-        <input type="email" id="email" name="email" required/>
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" required/>
       </div>
       <div class="form-group">
-        <label for="password">Contraseña</label>
-        <input type="password" id="password" name="password" required/>
+        <label for="clave">Contraseña</label>
+        <input type="password" id="clave" name="clave" required/>
       </div>
       <button class="login-btn" type="submit">Entrar</button>
     </form>
   </div>
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const usuario = document.getElementById('usuario').value;
+      const clave = document.getElementById('clave').value;
+      const mensaje = document.getElementById('mensaje');
+
+      fetch('data/usuarios.json') // cambia si está en otra ruta
+        .then(response => {
+          if (!response.ok) throw new Error('No se pudo cargar el archivo JSON');
+          return response.json();
+        })
+        .then(usuarios => {
+          const usuarioValido = usuarios.find(user => user.usuario === usuario && user.clave === clave);
+
+          if (usuarioValido) {
+            // Redirigir al usuario a otra parte del repo
+            window.location.href = "carlos-varas/index.html"; // Ajusta esta ruta a tu estructura
+          } else {
+            mensaje.textContent = "Usuario o contraseña incorrectos";
+          }
+        })
+        .catch(error => {
+          mensaje.textContent = "Error al validar: " + error.message;
+        });
+    });
+  </script>
 </body>
 </html>
