@@ -1,4 +1,6 @@
 [IPINCE ANTUNEZ](../daniel-ipince/) | [ALVAREZ COLOMA](https://jthnconti.github.io/portafoliojthn/) | [WASHINGTON OLARTE](https://wachifr.github.io/) | [ANGEL NINA](https://angel20-a11.github.io/angel20-a11/)
+
+# BIENVENIDO AL PORTAFOLIO DE: CARLOS EDUARDO VARAS PEREZ
 # Programador de Sistemas
 Habilidades técnicas: SQL, VB .net, C#, Javascript, Jquery
 ## Educación
