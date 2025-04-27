@@ -1,6 +1,7 @@
 title: Jonathan Alvarez - Especialista en Redes y Ciberseguridad
 description: Portafolio profesional de Jonathan Alvarez, docente y especialista en redes, ciberseguridad y educación tecnológica
-url: "https://jthnconti.github.io/portafoliojthn/" # Reemplaza con tu URL
+baseurl: "/portafolio_grupo_D_uc/jonathan-alvarez"  
+url: "https://digitec-conexion.github.io/portafolio_grupo_D_uc/jonathan-alvarez/" 
 remote_theme: pages-themes/hacker@v0.2.0
 
 plugins:
