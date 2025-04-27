@@ -1,8 +1,9 @@
 title: Jonathan Alvarez - Especialista en Redes y Ciberseguridad
 description: Portafolio profesional de Jonathan Alvarez, docente y especialista en redes, ciberseguridad y educación tecnológica
 
-baseurl: "/portafolio_grupo_D_uc/jonathan-alvarez"
-url: "https://digitec-conexion.github.io"  
+baseurl: "" 
+url: "https://digitec-conexion.github.io"
+
 remote_theme: pages-themes/hacker@v0.2.0
 
 # Configuración esencial para plugins
@@ -31,19 +32,17 @@ sass:
 
 # Configuración de datos
 
-data_source: ./jonathan-alvarez/_data  # Ruta relativa explícita desde la raíz del repo
+data_source: "/portafolio_grupo_D_uc/jonathan-alvarez/_data"
 collections:
   data:
     output: false
-    path: "jonathan-alvarez/_data"  # Ruta absoluta desde la raíz
+    path: "/portafolio_grupo_D_uc/jonathan-alvarez/_data"
 
-# Añade esto para asegurar que Jekyll incluya los archivos
 include:
-  - jonathan-alvarez/_data/education.json
-  - jonathan-alvarez/_data/experience.json
-  - jonathan-alvarez/_data/projects.json
-  - jonathan-alvarez/_data/skills.json
-
+  - "/portafolio_grupo_D_uc/jonathan-alvarez/_data/education.json"
+  - "/portafolio_grupo_D_uc/jonathan-alvarez/_data/experience.json"
+  - "/portafolio_grupo_D_uc/jonathan-alvarez/_data/projects.json"
+  - "/portafolio_grupo_D_uc/jonathan-alvarez/_data/skills.json"
 # Configuración personalizada
 social:
   linkedin: jonathan-ac28
