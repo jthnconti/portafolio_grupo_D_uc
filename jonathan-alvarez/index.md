@@ -2,6 +2,10 @@
 layout: default
 ---
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link rel="stylesheet" href="/assets/css/custom.css">
+
 <div class="profile-header">
   <div class="profile-text">
     <h1>👨‍💻 Jonathan Alvarez Coloma</h1>
@@ -161,61 +165,7 @@ Soy un profesional apasionado por las **tecnologías de la información y la edu
   </div>
 </div>
 
-<style>
-  /* Estilos CSS para el portafolio */
-  .profile-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-  }
-  
-  .profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #4CAF50;
-  }
-  
-  .experience-card {
-    background: #f9f9f9;
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
-  .tech-tag {
-    display: inline-block;
-    background: #e0e0e0;
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 0.8rem;
-  }
-  
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .project-card {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 8px;
-    transition: transform 0.3s;
-  }
-  
-  .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  }
-  
-  /* Más estilos personalizados... */
-</style>
+
 
 <script>
   // Scripts opcionales para funcionalidad adicional
