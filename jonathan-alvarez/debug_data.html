@@ -1,0 +1,12 @@
+---
+layout: none
+---
+<pre>
+Debug Info:
+BaseURL: {{ site.baseurl }}
+Data source: {{ site.data_source }}
+Data files:
+{% for file in site.data %}
+- {{ file[0] }}: {% if file[1] %}✅{% else %}❌{% endif %}
+{% endfor %}
+</pre>
