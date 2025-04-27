@@ -32,8 +32,16 @@ sass:
 data_source: _data
 collections:
   data:
-    output: true
+    output: false
     permalink: /:path/
+    path: "_data"
+
+include:
+  - _data/education.json
+  - _data/experience.json
+  - _data/projects.json
+  - _data/skills.json
+  - _data/tools.json
 
 # Configuración personalizada
 social:
