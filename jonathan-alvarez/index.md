@@ -1,137 +1,225 @@
-<div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
-  <div style="max-width: 70%;">
-    <h1 style="margin-bottom: 0;">👨‍💻 Jonathan Alvarez Coloma</h1>
-    <p style="margin-top: 5px; margin-bottom: 10px;">
-      Docente y Especialista en Redes, Ciberseguridad y Educación Tecnológica
-    </p>
-    <p style="margin: 0;">📍 Arequipa, Perú</p>
-    <p style="margin: 0;">✉️ jalvarezc@tecsup.edu.pe</p>
-    <p style="margin: 0;">🌐 <a href="https://www.linkedin.com/in/jonathan-ac28/" target="_blank">LinkedIn</a></p>
+---
+layout: default
+---
+
+<div class="profile-header">
+  <div class="profile-text">
+    <h1>👨‍💻 Jonathan Alvarez Coloma</h1>
+    <p class="subtitle">Docente y Especialista en Redes, Ciberseguridad y Educación Tecnológica</p>
+    <div class="contact-info">
+      <p><i class="fas fa-map-marker-alt"></i> Arequipa, Perú</p>
+      <p><i class="fas fa-envelope"></i> jalvarezc@tecsup.edu.pe</p>
+      <p><i class="fas fa-globe"></i> <a href="https://www.linkedin.com/in/jonathan-ac28/" target="_blank">LinkedIn</a></p>
+    </div>
   </div>
-  <div style="text-align: right;">
-    <img src="assets/logo.jpg" alt="Jonathan Alvarez Coloma" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 2px solid #a3ff12; margin-top: 10px;">
-  </div>
+  <img src="/assets/images/logo.jpg" alt="Jonathan Alvarez" class="profile-img">
 </div>
 
 ---
 
-## 🧠 Sobre mí
+## 🧠 Sobre Mí
 
 Soy un profesional apasionado por las **tecnologías de la información y la educación**, con experiencia en la implementación de **redes inalámbricas**, **seguridad informática**, **virtualización** y **sistemas operativos Linux**. Actualmente me desempeño como **docente** en TECSUP, donde diseño experiencias de aprendizaje significativas en carreras técnicas.
 
-Actualmente soy Docente de Administración de Redes, especialista en infraestructura, ciberseguridad y virtualización. Me apasiona la enseñanza con tecnología y el desarrollo de soluciones innovadoras.
-
 ---
 
-## 💼 Experiencia
+## 💼 Experiencia Profesional
 
-### 👨‍🏫 **Docente / Colaborador Académico**  
-**TECSUP – Instituto Superior Tecnológico**  
-📅 2015 – Actualidad  
-- Diseño y ejecución de cursos de **Redes, Sistemas Operativos, Ciberseguridad y Cloud**.  
-- Implementación de **laboratorios virtuales** y plataformas de educación híbrida.  
-- Coordinación académica y liderazgo de programas de actualización técnica.
-
----
-
-### 🏢 iTERA S.A.C.
-**Ingeniero Preventa**  
-📍 Lima, Perú  
-🗓️ Julio 2017 - Diciembre 2019 (2 años 6 meses)  
-Jornada completa  
-
-**Funciones destacadas:**
-- Soporte preventa de soluciones como: Fortigate, ESET corporativo, Acronis, Synology, VMware, Safetica, Ubiquiti y Veeam.
-- Implementación de firewalls Fortigate (modelos: 50E, 60E, 100E, 200E).
-- Instalación y administración de servidores virtualizados con VMware vSphere 5.5 a 6.7.
-- Administración de servidores Windows: DNS, DHCP, Active Directory, File Server, Print Server y certificados digitales.
-- Soporte técnico a entornos Linux.
-- Configuración y diagnóstico de soluciones de seguridad (Safetica, ESET) y elaboración de reportes técnicos.
-
----
-
-**Soporte TI – iTERA S.A.C.**  
-📍 San Miguel, Lima  
-🗓️ Octubre 2016 - Marzo 2017 (6 meses)
-
-**Funciones destacadas:**
-- Soporte técnico integral: remoto, presencial y telefónico.
-- Capacitación a usuarios sobre soluciones tecnológicas vendidas.
-- Implementación de backups con Acronis y NAS Synology.
-- Mantenimiento de redes y estaciones de trabajo.
-- Soporte en soluciones de seguridad como ESET, NAS Synology y Safetica.
-- Instalación de Windows Desktop y Server (2008 a 2016).
-
----
-
-### 🛠️ EngiPerú
-**Soporte TI**  
-📍 Lima, Perú  
-🗓️ Octubre 2015 - Julio 2016 (10 meses)
-
-**Funciones destacadas:**
-- Implementación y soporte remoto de soluciones de seguridad TI.
-- Apoyo al área comercial en preventa de productos de ciberseguridad.
-- Configuración básica de infraestructura en empresas clientes.
-
----
-
-### 🏭 Southern Peru Copper Corporation (SPCC)
-**Practicante – Control de Procesos**  
-📍 Toquepala  
-🗓️ Febrero 2015 - Julio 2015 (6 meses)
-
-**Funciones destacadas:**
-- Apoyo en monitoreo y documentación de variables de control de procesos industriales.
-- Colaboración en actividades de mejora continua dentro de planta.
+{% for job in site.data.experience %}
+<div class="experience-card">
+  <h3>{{ job.position }}</h3>
+  <div class="job-meta">
+    <span class="company"><strong>{{ job.company }}</strong></span>
+    <span class="duration">📅 {{ job.duration }}</span>
+    {% if job.location %}<span class="location">📍 {{ job.location }}</span>{% endif %}
+  </div>
+  
+  <div class="job-description">
+    {{ job.description | markdownify }}
+  </div>
+  
+  {% if job.responsibilities %}
+  <div class="responsibilities">
+    <h4>Funciones destacadas:</h4>
+    <ul>
+      {% for item in job.responsibilities %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  
+  {% if job.technologies %}
+  <div class="technologies">
+    <h4>Tecnologías utilizadas:</h4>
+    <div class="tech-tags">
+      {% for tech in job.technologies %}
+      <span class="tech-tag">{{ tech }}</span>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endfor %}
 
 ---
 
 ## 🧩 Habilidades Técnicas
 
-- Redes LAN/WAN, Routing & Switching (Cisco, MikroTik, Ubiquiti)  
-- Sistemas Operativos (Linux, Windows Server)  
-- Automatización con PowerShell y Bash  
-- Seguridad Informática (Firewall, Pentesting, Endpoints)  
-- Virtualización con VMware y Proxmox  
-- Plataformas Cloud: AWS, Azure (básico-Intermedio)  
+{% for category in site.data.skills.categories %}
+<div class="skills-category">
+  <h3>{{ category.name }}</h3>
+  <div class="skills-list">
+    {% for skill in category.skills %}
+    <div class="skill-item">
+      <span class="skill-name">{{ skill.name }}</span>
+      <div class="skill-level">
+        <div class="skill-bar" style="width: {{ skill.level }}%"></div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endfor %}
 
 ---
 
-## 🎓 Formación
+## 🎓 Formación Académica
 
-- **Carrera Técnica: Redes y Comunicaciones de Datos** - Tecsup
-- **Ingeniería de Sistemas e Inform+atica** – Universidad Continental - Actualidad  
-- Certificaciones en CCNA, Linux, , entre otras.
+{% for education in site.data.education %}
+<div class="education-card">
+  <h3>{{ education.degree }}</h3>
+  <div class="education-meta">
+    <span class="institution">{{ education.institution }}</span>
+    <span class="year">📅 {{ education.year }}</span>
+  </div>
+  {% if education.description %}
+  <p>{{ education.description }}</p>
+  {% endif %}
+</div>
+{% endfor %}
 
 ---
 
 ## 🛠 Proyectos Destacados
 
-- 🔧 **Diseño de red WiFi empresarial con Ubiquiti**  
-- 🧪 **Implementación de laboratorios híbridos para enseñanza técnica**  
-- 📊 **Diseño de cursos para Programas de Extensión Profesional**  
-- 📡 **Implemetación de Firewalls (Fortigate-Sophos-Chekpoint) y Políticas de Seguridad Informática en Empresas**
+<div class="projects-grid">
+  {% for project in site.data.projects %}
+  <div class="project-card">
+    <h3>{{ project.name }}</h3>
+    <div class="project-meta">
+      <span class="year">📅 {{ project.year }}</span>
+      {% if project.client %}<span class="client">👨‍💼 {{ project.client }}</span>{% endif %}
+    </div>
+    <p>{{ project.description }}</p>
+    <div class="project-tech">
+      {% for tech in project.technologies %}
+      <span class="tech-tag">{{ tech }}</span>
+      {% endfor %}
+    </div>
+    {% if project.link %}
+    <a href="{{ project.link }}" target="_blank" class="project-link">Ver detalles</a>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
 
 ---
 
-## 📢 Lenguajes y Herramientas
+## 📢 Tecnologías y Herramientas
 
-![Cisco](https://img.shields.io/badge/Cisco-Networking-blue)  
-![Linux](https://img.shields.io/badge/Linux-Shell-brightgreen)   
-![VMware](https://img.shields.io/badge/VMware-Virtualization-orange)  
-![Python](https://img.shields.io/badge/Python-Scripting-yellow)  
-![Fortinet](https://img.shields.io/badge/Fortinet-Firewalls-red)
-
----
-
-## 📫 Contáctame
-
-¿Quieres colaborar o saber más sobre mis proyectos educativos y tecnológicos?
-
-📨 jalvarezc@tecsup.edu.pe  
-🔗 [LinkedIn](https://www.linkedin.com/in/jonathan-ac28/)
+<div class="tools-section">
+  {% for tool in site.data.tools %}
+  <div class="tool-item">
+    <img src="/assets/images/tools/{{ tool.icon }}" alt="{{ tool.name }}" class="tool-icon">
+    <span class="tool-name">{{ tool.name }}</span>
+  </div>
+  {% endfor %}
+</div>
 
 ---
 
-> “La tecnología debe ser una herramienta que libere el pensamiento y potencie la educación.”
+## 📫 Contacto
+
+<div class="contact-section">
+  <div class="contact-form">
+    <h3>Envíame un mensaje</h3>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu email" required>
+      <textarea name="message" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  <div class="contact-details">
+    <h3>Mis redes</h3>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/jonathan-ac28/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="mailto:jalvarezc@tecsup.edu.pe"><i class="fas fa-envelope"></i> Email</a>
+      <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Estilos CSS para el portafolio */
+  .profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4CAF50;
+  }
+  
+  .experience-card {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .tech-tag {
+    display: inline-block;
+    background: #e0e0e0;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  /* Más estilos personalizados... */
+</style>
+
+<script>
+  // Scripts opcionales para funcionalidad adicional
+  document.addEventListener('DOMContentLoaded', function() {
+    // Puedes añadir interactividad aquí
+  });
+</script>
