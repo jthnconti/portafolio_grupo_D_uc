@@ -4,7 +4,7 @@ layout: default
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+<link rel="stylesheet" href="/portafolio_grupo_D_uc/jonathan-alvarez/assets/css/custom.css">
 
 
 <header class="profile-header">
@@ -17,7 +17,7 @@ layout: default
       <p><i class="fas fa-globe"></i> <a href="https://www.linkedin.com/in/jonathan-ac28/" target="_blank">LinkedIn</a></p>
     </div>
   </div>
-  <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="Jonathan Alvarez" class="profile-img">
+  <img src="/portafolio_grupo_D_uc/jonathan-alvarez/assets/images/logo.jpg" alt="Jonathan Alvarez" class="profile-img">
 </header>
 
 ---
