@@ -1,7 +1,8 @@
 title: Jonathan Alvarez - Especialista en Redes y Ciberseguridad
 description: Portafolio profesional de Jonathan Alvarez, docente y especialista en redes, ciberseguridad y educación tecnológica
-baseurl: "/portafolio_grupo_D_uc/jonathan-alvarez"  
-url: "https://digitec-conexion.github.io"  # Cambiado a dominio raíz
+
+baseurl: "/portafolio_grupo_D_uc/jonathan-alvarez"
+url: "https://digitec-conexion.github.io"  
 remote_theme: pages-themes/hacker@v0.2.0
 
 # Configuración esencial para plugins
@@ -18,7 +19,7 @@ defaults:
     values:
       layout: default
   - scope:
-      path: "_data"  # Especifica que los archivos JSON son datos
+      path: "./jonathan-alvarez/_data"  # Especifica que los archivos JSON son datos
     values:
       layout: null  # No usar layout para archivos de datos
 
