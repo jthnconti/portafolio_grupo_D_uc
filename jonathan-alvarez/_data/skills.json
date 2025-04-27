@@ -1,1 +1,20 @@
-
+{
+  "categories": [
+    {
+      "name": "Redes",
+      "skills": [
+        {"name": "Cisco", "level": "90"},
+        {"name": "MikroTik", "level": "85"},
+        {"name": "Ubiquiti", "level": "80"}
+      ]
+    },
+    {
+      "name": "Seguridad",
+      "skills": [
+        {"name": "Firewalls", "level": "85"},
+        {"name": "Pentesting", "level": "75"},
+        {"name": "Fortigate", "level": "90"}
+      ]
+    }
+  ]
+}
