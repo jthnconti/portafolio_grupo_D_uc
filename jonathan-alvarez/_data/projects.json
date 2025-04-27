@@ -1,1 +1,17 @@
-
+[
+  {
+    "name": "Diseño de red WiFi empresarial",
+    "year": "2022",
+    "client": "Empresa XYZ",
+    "description": "Implementación de solución WiFi empresarial con Ubiquiti para cobertura en 3 pisos.",
+    "technologies": ["Ubiquiti", "VLAN", "QoS"],
+    "link": "#"
+  },
+  {
+    "name": "Laboratorios híbridos para enseñanza",
+    "year": "2021",
+    "description": "Desarrollo de plataforma híbrida para prácticas de redes y seguridad.",
+    "technologies": ["VMware", "Docker", "Linux"],
+    "link": "#"
+  }
+]
