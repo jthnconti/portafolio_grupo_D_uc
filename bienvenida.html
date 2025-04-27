@@ -5,45 +5,79 @@
     <title>Bienvenido GRUPO D</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            color: #fff;
             text-align: center;
-            background-color: #f0f2f5;
-            margin-top: 50px;
+        }
+        header {
+            margin-top: 60px;
         }
         h1 {
-            color: #333;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 20px auto;
+            line-height: 1.6;
         }
         .accesos {
-            margin-top: 40px;
+            margin-top: 50px;
             display: flex;
-            justify-content: center;
-            gap: 30px;
             flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
         .acceso {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 30px;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 2px solid #fff;
+            padding: 20px 40px;
+            border-radius: 15px;
             text-decoration: none;
-            border-radius: 10px;
-            font-size: 18px;
-            transition: background-color 0.3s;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
         }
         .acceso:hover {
-            background-color: #45a049;
+            background-color: rgba(255, 255, 255, 0.4);
+            color: #0072ff;
+        }
+        footer {
+            margin-top: auto;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            opacity: 0.8;
         }
     </style>
 </head>
 <body>
 
-    <h1>Bienvenido GRUPO D</h1>
+    <header>
+        <h1>Bienvenidos al GRUPO D</h1>
+        <p>¡Estamos muy felices de recibirte aquí! Este espacio ha sido creado para que todos los miembros del grupo encuentren rápidamente todo lo que necesitan. 
+           A continuación, encontrarás accesos directos a nuestras principales carpetas de trabajo. ¡Explora y comienza a construir junto a nosotros!</p>
+    </header>
 
     <div class="accesos">
-        <a class="acceso" href="carpeta1/">Carpeta 1</a>
-        <a class="acceso" href="carpeta2/">Carpeta 2</a>
-        <a class="acceso" href="carpeta3/">Carpeta 3</a>
-        <a class="acceso" href="carpeta4/">Carpeta 4</a>
+        <a class="acceso" href="carlos-varas/index.html">📁 Carlos Varas</a>
+        <a class="acceso" href="carpeta2/">📁 Carpeta 2</a>
+        <a class="acceso" href="carpeta3/">📁 Carpeta 3</a>
+        <a class="acceso" href="carpeta4/">📁 Carpeta 4</a>
     </div>
+
+    <footer>
+        © 2025 GRUPO D. Todos los derechos reservados.
+    </footer>
 
 </body>
 </html>
