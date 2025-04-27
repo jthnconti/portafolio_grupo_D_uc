@@ -1,1 +1,28 @@
-
+[
+  {
+    "position": "Docente / Colaborador Académico",
+    "company": "TECSUP – Instituto Superior Tecnológico",
+    "duration": "2015 – Actualidad",
+    "location": "Arequipa, Perú",
+    "description": "Diseño y ejecución de cursos de **Redes, Sistemas Operativos, Ciberseguridad y Cloud**. Implementación de **laboratorios virtuales** y plataformas de educación híbrida.",
+    "responsibilities": [
+      "Diseño y ejecución de cursos técnicos",
+      "Implementación de laboratorios virtuales",
+      "Coordinación académica de programas"
+    ],
+    "technologies": ["VMware", "Cisco", "Linux", "Windows Server", "Fortinet"]
+  },
+  {
+    "position": "Ingeniero Preventa",
+    "company": "iTERA S.A.C.",
+    "duration": "Julio 2017 - Diciembre 2019",
+    "location": "Lima, Perú",
+    "description": "Soporte preventa de soluciones tecnológicas para empresas.",
+    "responsibilities": [
+      "Implementación de firewalls Fortigate",
+      "Administración de servidores virtualizados",
+      "Configuración de soluciones de seguridad"
+    ],
+    "technologies": ["Fortigate", "VMware", "ESET", "Acronis", "Windows Server"]
+  }
+]
