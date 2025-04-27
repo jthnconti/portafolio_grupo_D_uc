@@ -29,19 +29,19 @@ sass:
   style: compressed
 
 # Configuración de datos
-data_source: _data
+
+data_source: ./jonathan-alvarez/_data  # Ruta relativa explícita desde la raíz del repo
 collections:
   data:
     output: false
-    permalink: /:path/
-    path: "_data"
+    path: "jonathan-alvarez/_data"  # Ruta absoluta desde la raíz
 
+# Añade esto para asegurar que Jekyll incluya los archivos
 include:
-  - _data/education.json
-  - _data/experience.json
-  - _data/projects.json
-  - _data/skills.json
-  - _data/tools.json
+  - jonathan-alvarez/_data/education.json
+  - jonathan-alvarez/_data/experience.json
+  - jonathan-alvarez/_data/projects.json
+  - jonathan-alvarez/_data/skills.json
 
 # Configuración personalizada
 social:
