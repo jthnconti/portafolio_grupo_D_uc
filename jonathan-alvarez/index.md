@@ -6,7 +6,8 @@ layout: default
 
 <link rel="stylesheet" href="/assets/css/custom.css">
 
-<div class="profile-header">
+
+<header class="profile-header">
   <div class="profile-text">
     <h1>👨‍💻 Jonathan Alvarez Coloma</h1>
     <p class="subtitle">Docente y Especialista en Redes, Ciberseguridad y Educación Tecnológica</p>
@@ -17,7 +18,7 @@ layout: default
     </div>
   </div>
   <img src="/assets/images/logo.jpg" alt="Jonathan Alvarez" class="profile-img">
-</div>
+</header>
 
 ---
 
