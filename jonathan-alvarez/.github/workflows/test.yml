@@ -1,0 +1,14 @@
+name: Ejecutar pruebas TDD
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Ejecutar Tests
+      run: |
+        cd jonathan-alvarez/tests
+        python3 test_posts.py
+        python3 test_users.py
