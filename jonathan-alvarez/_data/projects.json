@@ -1,17 +1,30 @@
 [
   {
-    "name": "Diseño de red WiFi empresarial",
+    "name": "Diseño de red WiFi empresarial con Ubiquiti",
     "year": "2022",
-    "client": "Empresa XYZ",
-    "description": "Implementación de solución WiFi empresarial con Ubiquiti para cobertura en 3 pisos.",
-    "technologies": ["Ubiquiti", "VLAN", "QoS"],
+    "description": "Implementación de solución WiFi empresarial para cobertura en múltiples pisos",
+    "technologies": ["Ubiquiti", "Wireless", "Redes"],
     "link": "#"
   },
   {
-    "name": "Laboratorios híbridos para enseñanza",
+    "name": "Implementación de laboratorios híbridos para enseñanza técnica",
     "year": "2021",
-    "description": "Desarrollo de plataforma híbrida para prácticas de redes y seguridad.",
-    "technologies": ["VMware", "Docker", "Linux"],
+    "description": "Desarrollo de plataforma híbrida para prácticas de redes y seguridad",
+    "technologies": ["Virtualización", "Educación", "Redes"],
+    "link": "#"
+  },
+  {
+    "name": "Diseño de cursos para Programas de Extensión Profesional",
+    "year": "2020",
+    "description": "Creación de contenido técnico para capacitaciones profesionales",
+    "technologies": ["Educación", "Tecnología"],
+    "link": "#"
+  },
+  {
+    "name": "Implementación de Firewalls y Políticas de Seguridad",
+    "year": "2019",
+    "description": "Despliegue de soluciones Fortigate-Sophos-Checkpoint en empresas",
+    "technologies": ["Fortigate", "Sophos", "Checkpoint", "Seguridad"],
     "link": "#"
   }
 ]
