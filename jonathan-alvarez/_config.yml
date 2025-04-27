@@ -1,7 +1,22 @@
-title: Jonathan Alvarez Coloma
-logo: logo.jpg
-show_downloads: true
-##theme: jekyll-theme-minimal
+title: Jonathan Alvarez - Especialista en Redes y Ciberseguridad
+description: Portafolio profesional de Jonathan Alvarez, docente y especialista en redes, ciberseguridad y educación tecnológica
+url: "https://jthnconti.github.io/portafoliojthn/" # Reemplaza con tu URL
 remote_theme: pages-themes/hacker@v0.2.0
+
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-remote-theme
+  - jekyll-seo-tag # Para mejor SEO
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+sass:
+  style: compressed
+
+# Configuración personalizada
+social:
+  linkedin: jonathan-ac28
+  email: jalvarezc@tecsup.edu.pe
