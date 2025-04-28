@@ -30,7 +30,9 @@ Soy un profesional apasionado por las **tecnologías de la información y la edu
 
 ## 💼 Experiencia Profesional
 
-{% for job in site.data.experience %}
+{% assign experiencia = site.data["portafolio_grupo_D_uc/jonathan-alvarez/_data/experience"] %}
+
+{% for job in experience %}
 <div class="experience-card">
   <h3>{{ job.position }}</h3>
   <div class="job-meta">
