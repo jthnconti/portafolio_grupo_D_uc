@@ -20,7 +20,7 @@ defaults:
     values:
       layout: default
   - scope:
-      path: "./jonathan-alvarez/_data"  # Especifica que los archivos JSON son datos
+      path: "data"  # Especifica que los archivos JSON son datos
     values:
       layout: null  # No usar layout para archivos de datos
 
@@ -32,17 +32,17 @@ sass:
 
 # Configuración de datos
 
-data_source: "/portafolio_grupo_D_uc/jonathan-alvarez/_data"
+data_source: "data"
 collections:
   data:
     output: false
-    path: "/portafolio_grupo_D_uc/jonathan-alvarez/_data"
+    path: "data"
 
 include:
-  - "/portafolio_grupo_D_uc/jonathan-alvarez/_data/education.json"
-  - "/portafolio_grupo_D_uc/jonathan-alvarez/_data/experience.json"
-  - "/portafolio_grupo_D_uc/jonathan-alvarez/_data/projects.json"
-  - "/portafolio_grupo_D_uc/jonathan-alvarez/_data/skills.json"
+  - "/data/education.json"
+  - "/data/experience.json"
+  - "/data/projects.json"
+  - "/data/skills.json"
 # Configuración personalizada
 social:
   linkedin: jonathan-ac28
