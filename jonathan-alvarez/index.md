@@ -31,7 +31,7 @@ Soy un profesional apasionado por las **tecnologías de la información y la edu
 ## 💼 Experiencia Profesional
 
 
-{% for job in site.jonathan-alvarez.data.experience %}
+{% for job in site.data.experience %}
 <div class="experience-card">
   <h3>{{ job.position }}</h3>
   <div class="job-meta">
