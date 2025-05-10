@@ -11,6 +11,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+      # AÑADE ESTOS PASOS NUEVOS:
+      - name: Configure Git
+        run: |
+          git config --global user.name "jthnconti"
+          git config --global user.email "72892652@continental.edu.pe"
       - run: npm install -g gh-pages
       - run: npm install
       - run: npx gh-pages -d . -r https://${{ secrets.GITHUB_TOKEN }}@github.com/digitec-conexion/portafolio_grupo_D_uc.git
