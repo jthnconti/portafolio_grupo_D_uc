@@ -9,13 +9,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Clonar repositorio
+      uses: actions/checkout@v3
 
-    - name: Copiar archivos a carpeta /docs
+    - name: Construir imagen Docker
+      run: docker build -t grupo-d-site -f Dockerfile .
+
+    - name: Validar que el contenedor funcione
+      run: docker run --rm grupo-d-site ls /usr/share/nginx/html
+
+    - name: Extraer archivos desde Docker
       run: |
-        mkdir -p docs
-        cp index.html bienvenida.html -t docs/
-        cp -r data docs/
+        container_id=$(docker create grupo-d-site)
+        docker cp $container_id:/usr/share/nginx/html ./docs
+        docker rm $container_id
 
     - name: Configurar Git
       run: |
