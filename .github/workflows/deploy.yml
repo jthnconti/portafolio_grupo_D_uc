@@ -9,27 +9,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Clonar repositorio
+    - name: Checkout repo
       uses: actions/checkout@v3
 
-    - name: Construir imagen Docker
+    - name: Build Docker image
       run: docker build -t grupo-d-site -f docker/Dockerfile .
 
-    - name: Validar que el contenedor funcione
+    - name: Test container execution (list served files)
       run: docker run --rm grupo-d-site ls /usr/share/nginx/html
 
-    - name: Extraer archivos desde Docker
+    - name: Extract site content from Docker container
       run: |
         container_id=$(docker create grupo-d-site)
         docker cp $container_id:/usr/share/nginx/html ./docs
         docker rm $container_id
 
-    - name: Configurar Git
+    - name: Check extracted files (for debug)
+      run: ls -la ./docs
+
+    - name: Configure Git
       run: |
         git config user.name "jthnconti"
         git config user.email "72892652@continental.edu.pe"
 
-    - name: Publicar en GitHub Pages
+    - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
