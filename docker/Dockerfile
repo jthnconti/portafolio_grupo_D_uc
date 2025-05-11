@@ -9,7 +9,6 @@ COPY index.html /usr/share/nginx/html/index.html
 COPY bienvenida.html /usr/share/nginx/html/bienvenida.html
 COPY data/ /usr/share/nginx/html/data/
 COPY assets/ /usr/share/nginx/html/assets/
-COPY scripts/ /usr/share/nginx/html/scripts/
 
 # Puerto expuesto (opcional para pruebas locales)
 EXPOSE 80
