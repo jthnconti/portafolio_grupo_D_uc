@@ -1,24 +1,15 @@
-name: Deploy to GitHub Pages
-on:
-  push:
-    branches: [main]
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
       
-      - run: npm install
-      - name: Configure Git Credentials
+      # Paso 1: Construir imagen Docker
+      - name: Build Docker image
         run: |
-           git config --global http.https://github.com/.extraheader "AUTHORIZATION: basic $(echo -n "x-access-token:${{ secrets.GITHUB_TOKEN }}" | base64)"
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.PERSONAL_TOKEN }}
-          publish_dir: .
-          publish_branch: gh-pages
+          docker build -t portafolio-builder -f docker/Dockerfile .
+      
+      # Paso 2: Ejecutar el contenedor
+      - name: Deploy with Docker
+        run: |
+          docker run --rm -e PERSONAL_TOKEN=${{ secrets.PERSONAL_TOKEN }} portafolio-builder
