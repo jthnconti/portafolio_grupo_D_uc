@@ -1,9 +1,9 @@
 {
-  "name": "portafolio-grupo-d",
   "scripts": {
-    "deploy": "gh-pages -d ."
-  },
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "docker:build": "docker build -t portafolio .",
+    "docker:run": "docker run -p 8080:80 portafolio"
   }
 }
