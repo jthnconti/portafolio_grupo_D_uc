@@ -6,7 +6,7 @@ Este repositorio contiene el desarrollo del proyecto grupal para la asignatura *
 
 - Jonathan Vicente Alvarez Coloma  
 - Daniel Alberto Ipince Antunez  
-- Richard Ángel Nina Chicaña  
+- Richard Ángel Nina Chicaña
 - Washington Olarte Velásquez  
 - Carlos Eduardo Varas Pérez  
 
