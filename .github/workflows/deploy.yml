@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Build and Deploy Docker-based Site to GitHub Pages
 
 on:
   push:
@@ -7,19 +7,24 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          
-      - run: npm install
-      - run: npm run build
-      
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+    - uses: actions/checkout@v3
+
+    - name: Copiar archivos a carpeta /docs
+      run: |
+        mkdir -p docs
+        cp index.html bienvenida.html -t docs/
+        cp -r data docs/
+
+    - name: Configurar Git
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+
+    - name: Publicar en GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.PERSONAL_TOKEN }}
+        publish_dir: ./docs
+        publish_branch: gh-pages
