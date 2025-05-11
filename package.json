@@ -1,9 +1,0 @@
-{
-  "name": "portafolio-grupo-d",
-  "scripts": {
-    "deploy": "gh-pages -d ."
-  },
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
-  }
-}
