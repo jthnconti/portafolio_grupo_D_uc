@@ -19,8 +19,8 @@ jobs:
 
     - name: Configurar Git
       run: |
-        git config user.name "github-actions"
-        git config user.email "github-actions@github.com"
+        git config user.name "jthnconti"
+        git config user.email "72892652@continental.edu.pe"
 
     - name: Publicar en GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
