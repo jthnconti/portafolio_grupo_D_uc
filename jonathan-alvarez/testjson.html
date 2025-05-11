@@ -1,0 +1,8 @@
+---
+layout: none
+---
+<pre>Data Load Test:
+Experiencia: {% if site.data.experience %}(Cargado){% else %}(NO Cargado){% endif %}
+Proyectos: {% if site.data.projects %}(Cargado){% else %}(NO Cargado){% endif %}
+Ruta data: {{ site.data_source | inspect }}
+</pre>
