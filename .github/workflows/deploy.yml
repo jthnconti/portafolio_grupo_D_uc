@@ -21,7 +21,7 @@ jobs:
     - name: Extract site content from Docker container
       run: |
         container_id=$(docker create grupo-d-site)
-        docker cp $container_id:/usr/share/nginx/html ./docs
+        docker cp $container_id:/usr/share/nginx/html/. ./docs
         docker rm $container_id
 
     - name: Check extracted files (for debug)
